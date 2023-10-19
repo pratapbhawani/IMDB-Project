@@ -1,0 +1,32 @@
+.container{
+    padding: 1rem;
+    /* border: 1px solid white; */
+}
+.fav-movies-box{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* border: 1px solid white; */
+}
+.fav-movies{
+    width: 18rem;
+    height: 20rem;
+    margin: 1.2rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 4px white;
+    text-align: center;
+}
+.fav-movies img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.fav-movies div i{
+    text-align: center;
+}
+.fav-movies div i:hover{
+    cursor: pointer;
+    color: red;
+}

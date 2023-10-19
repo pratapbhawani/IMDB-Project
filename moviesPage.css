@@ -1,0 +1,48 @@
+.logo-box h2 a{
+    text-decoration: none;
+    color: #1a98ff;
+}
+.movie-details-container{
+    /* border: 1px solid white; */
+    margin-top: 4%;
+    display: flex;
+}
+.movie-poster-container{
+    height: 80vh;
+    width: 50%;
+}
+.poster-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 3px white inset;
+}
+.movie-poster-container img{
+    height: 95%;
+    width: 95%;
+    box-shadow: 0 0 9px 3px #fc0;
+}
+.movies-details-box{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 1rem 2rem;
+    width: 50%;
+}
+.movie-info{
+    margin: 3px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+p{
+    color: #1a98ff;
+}
+.movie-info p span{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fc0;
+}
+p i{
+    color: #fc0;
+}

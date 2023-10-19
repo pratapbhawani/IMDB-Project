@@ -1,0 +1,487 @@
+*{
+    background-color: #00050d;
+    color: #fff;
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+    /* font-family: 'Piazzolla', serif; */
+    letter-spacing: .02em;
+}
+
+.logo-box h2{
+    color: #1a98ff;
+    box-shadow: 0 0 4px 6px #fc0;
+    padding: 0.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.logo-box h2 span{
+    font-size: small;
+    color: #fc0;
+}
+.nav-container{
+    /* background-color: #011022; */
+    /* border: 1px solid white; */
+    display: flex;
+    padding: 1rem;
+}
+.nav-container div{
+    padding: 0.2rem;
+    margin: 0.2rem;
+}
+.nav-bar-content-box{
+    display: flex;
+    /* border: 1px solid white; */
+    /* width: auto; */
+    min-width: 40%;
+    justify-content: space-around;
+    /* z-index: 1; */
+}
+.nav-bar-content{
+    /* border: 1px solid white; */
+    /* width: auto; */
+    /* min-width: 32%; */
+    position: relative;
+    left: 20%;
+}
+.nav-bar-content h3{
+    width: 30%;
+}
+.nav-bar-content h3 a{
+    text-decoration: none;
+    margin: 15%;
+    padding: 10%;
+    /* margin: 0%; */
+    /* margin-left: 40%; */
+}
+.nav-bar-form-content{
+    /* border: 1px solid white; */
+    width: 40%;
+    height: 4%;
+    position: absolute;
+    /* left: 25%; */
+    right: 1rem;
+}
+.nav-bar-form-content input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 85%;
+    border-radius: 25px;
+    font-size: 20px;
+    padding: 8px 30px;
+    border: none;
+    box-shadow: 0 5px 8px 3px grey;
+    transition: all 1ms ease-in-out;
+    display: block;
+}
+.nav-bar-form-content input:focus{
+    outline: none;
+}
+.nav-bar-form-content button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1.6rem;
+}
+.nav-bar-form-content button i{
+    color: rgb(93, 94, 95);
+}
+.nav-bar-form-content button:hover i{
+    color: rgb(162, 163, 163);
+}
+.hide-element{
+    display: none;
+}
+.zindex-value{
+    z-index: 1;
+}
+
+/* -------------------end of nav bar--------------- */
+
+/* --------------starting of next and previous button--- */
+.previous-btn{
+    background: transparent;
+    font-size: 1.6rem;
+    transform: rotate(180deg);
+    z-index: 1;
+    position: absolute;
+}
+.previous-btn i{
+    background: transparent;
+    transition: all 0.1s ease-in-out;
+}
+.previous-btn i:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px white;
+    transform: scale(1.2,1.2);
+}
+.next-btn{
+    background: transparent;
+    font-size: 1.6rem;
+    position: absolute;
+}
+.next-btn i{
+    background: transparent;
+    transition: all 0.1s ease-in-out;
+}
+.next-btn i:hover{
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px white;
+    transform: scale(1.2,1.2);
+}
+/* ---starting of movies list next&prev button-- */
+.now-playing-prev-btn{
+    /* position: absolute; */
+    left: 15%;
+}
+.now-playing-next-btn{
+    /* position: absolute; */
+    right: 15%;
+}
+.popular-movies-prev-btn{
+    /* position: absolute; */
+    left: 3%;
+    top: 110%;
+}
+.popular-movies-next-btn{
+    /* position: absolute; */
+    right: 3%;
+    top: 110%;
+}
+/* ---ending of movies list next&prev button--- */
+/* ---starting of next&prev Tv shows button----- */
+.airring-today-prev-btn{
+    /* position: absolute; */
+    left: 15%;
+}
+.airring-today-next-btn{
+    right: 15%;
+}
+.on-air-show-prev-btn{
+    left: -2%;
+    top: 30%;
+}
+.on-air-show-next-btn{
+    right: -2%;
+    top: 30%;
+}
+.popular-tv-show-next-btn{
+    right: -2%;
+    top: 30%;
+}
+.popular-tv-show-prev-btn{
+    left: -2%;
+    top: 30%;
+}
+/* ---ending of next&prev Tv shows button----- */
+
+/* ---------------ending of next and previous button----- */
+
+
+/* -------------starting of movie list------------- */
+.movie-list-container{
+    /* border: 1px solid white; */
+    padding: 1rem 4rem;
+}
+.now-playing-container{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 65vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.now-playing{
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.now-playing img{
+    /* margin: 8% 0 0 12%; */
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 5px white ;
+    transition: all 1s ease-in-out;
+}
+.now-playing img:hover{
+    box-shadow: 0px 0px 6px 6px red ;
+    transform: scale(1.1) ;
+    cursor: pointer;
+}
+.now-playing-text{
+    position: relative;
+    top:2%;
+    left: -25%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: transparent;
+}
+.now-playing-text p{
+    background: transparent;
+    color:  #fff;
+}
+/* .now-playing-fav-btn{
+    right: 10%;
+    top: 0%;
+    margin-right:-15%;
+    margin-top: -7%;
+    position: absolute;
+} */
+/* ------------------starting of popular movies list------- */
+.popular-movies-box{
+    /* border: 1px solid white; */
+    margin-top: 10px;
+}
+.popular-movies-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.new-div-created{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.popular-movies{
+    width: 23%;
+    height: auto;
+    position: relative;
+    /* border: 1px solid white; */
+}
+.section-headings{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.popular-movies img{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 3px white ;
+    transition: all 0.5s ease-in-out;
+}
+.popular-movies img:hover{
+    box-shadow: 0px 0px 6px 6px red ;
+    transform: scale(1.1) ;
+    cursor: pointer;
+}
+.movies-names-info{
+    text-align: center;
+    font-weight: 700;
+}
+
+/* ------------------ending of popular movies list---------- */
+
+/* ---------starting of top rated------------ */
+section{
+    margin-top: 10px;
+}
+.top-rated-movies-prev-btn{
+    left: 3%;
+    top: 165%;
+}
+.top-rated-movies-next-btn{
+    right: 3%;
+    top: 165%;
+}
+/* -----------ending of top rated----------- */
+
+/* -----------------starting of upcoming movies--- */
+.upcoming-movies-next-btn{
+    right: 3%;
+    top: 225%;
+}
+.upcoming-movies-prev-btn{
+    left: 3%;
+    top: 225%;
+}
+/* -------------ending of upcoming movies------ */
+/* -------------ending of movie list--------------- */
+
+/* --------------starting of Tv shows--------------- */
+/* ---------Starting Arriving today--------- */
+.tv-shows-container{
+    /* border: 1px solid white; */
+    padding: 1rem 4rem;
+}
+.airring-today-container{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 65vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.airring-today{
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+}
+.airring-today img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 5px white ;
+    transition: all 0.5s ease-in-out;
+}
+.airring-today img:hover{
+    box-shadow: 0px 0px 6px 6px red ;
+    transform: scale(1.1) ;
+    cursor: pointer;
+}
+.airring-today-text{
+    position: relative;
+    top:2%;
+    left: -25%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: transparent;
+}
+.airring-today-text p{
+    background: transparent;
+    color:  #fff;
+}
+/* --------ending Arriving today----------- */
+
+/* ------starting of on the air----- */
+.on-air-show-container{
+    position: relative;
+}
+/* ----ending of on the air--------- */
+.popular-tv-show-container{
+    position: relative;
+}
+/* --------------ending of tv shows----------------- */
+.display-block{
+    display: block;
+}
+
+/* --------------starting of favorite-button------------ */
+.favorite-btn{
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    font-size: 1.5rem;
+    background: transparent;
+}
+.favorite-btn i{
+    background: transparent;
+    
+}
+.favorite-btn-toggle{
+    color: red;
+    font-weight: 900;
+}
+.favorite-btn i:hover{
+    cursor: pointer;
+}
+.now-playing-fav-btn{
+    right: 22%;
+    top: 25%;
+}
+.airring-today-fav-btn{
+    right: 13%;
+    top: 10%;
+}
+
+/* ----------------ending of favorite button------------ */
+
+
+/* <!-- -----------starting of displaying search results----------------> */
+.search-display-box{
+    /* border: 1px solid white; */
+    position: absolute;
+    width: 100%;
+    top: 140%;
+    right: 5%;
+    max-height: 500px;
+    overflow-y: scroll;
+    box-shadow: 2px 5px 8px 3px grey;
+    z-index: 30;
+}
+
+.search-display-box::-webkit-scrollbar{
+    width: 8px;
+}
+.search-display-box::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.search-display-box::-webkit-scrollbar-thumb{
+    background-color: #d4aa11;
+    outline: none;
+    border-radius: 10px;
+}
+.searched-movies{
+    background-color: #1d1d1d;
+    padding: 0.5rem;
+    border-bottom: 1px solid #171717;
+    width: calc(350px,8px);
+    color: #fff;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+}
+.searched-movies:hover{
+    background-color: #1f1f1f;
+}
+.searched-movie-picture{
+    width: 30%;
+    height: 15%;
+}
+.searched-movie-picture img{
+    width: 100%;
+    height: 100%;
+}
+/* <!-- -----------ending of displaying search results----------------> */
+
+@media screen and (max-width:600px) {
+    .new-div-created{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        
+    }
+    .popular-movies{
+        /* width: 200%; */
+        min-width: 145px;
+        height: 20rem;
+        margin: 1.2rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid white;
+        border-radius: 8px;
+        box-shadow: 0 0 4px 4px white;
+        text-align: center;
+        /* overflow: scroll; */
+    }
+    .popular-movies img{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 0px 3px 3px white ;
+        transition: all 0.5s ease-in-out;
+    }
+    .popular-movies-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+} 

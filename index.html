@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="./Photos/download.png">
+    <title>M&TV</title>
+</head>
+<body>
+    <main>
+        <div class="inside-main-container">
+        <!-- ----------starting of navigation bar--------->
+            <nav>
+                <div class="nav-container">
+                    <div class="logo-box">
+                        <h2>M&TV<span>Shows</span></h2>
+                    </div>
+                    <div class="nav-bar-content-box zindex-value">
+                        <div class="nav-bar-content">
+                            <h3><a href="#movies">Movies</a></h3>
+                        </div>
+                        <div class="nav-bar-content">
+                            <h3><a href="#tvshows">TvShows</a></h3>
+                        </div>
+                        <div class="nav-bar-content">
+                            <h3><a href="./favorite.html">Favorite</a></h3>
+                        </div>
+                    </div>
+                    <div class="nav-bar-form-content">
+                        <!-- <form action="" id="form-element"> -->
+                            <div id="search-input-div" class="hide-element">
+                                <input id="search-input" class="search-input" type="text" placeholder="Search for a movie,tv show...">
+                            </div>
+                            <div id="search-btn-div">
+                                <button type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                            <!-- -----------starting of displaying search results---------------->
+                            <div class="search-display-box hide-element">
+                                <!-- <div class="searched-movies">
+                                    <div class="searched-movie-picture">
+                                        <img src="./Photos/4.jpg" alt="">
+                                    </div>
+                                    <div class="searched-movie-info">
+                                        <p>Gaddar 2</p>
+                                        <p>2023</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- -----------ending of displaying search results---------------->
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </nav>
+        <!-- ---------Ending of navigation bar---------->
+
+        <!-- --------------Starting of movies list---------->
+            <div class="movie-list-container" id="movies-main-box">
+                <div class="movie-heading">
+                    <h1>Movies</h1>
+                </div>
+                <!-- ------starting of now playing------->
+                <div class="now-playing-container" id="movies">
+                    <div class="previous-btn now-playing-prev-btn">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </div>
+                    <div class="now-playing">
+                        <img src="./Photos/6.jpg" alt="movie-poster" class="now-playing-slides" id="">
+                    </div>
+                    <div class="favorite-btn hide-element  now-playing-fav-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="next-btn now-playing-next-btn">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </div>
+                    <div class="now-playing-text">
+                        <p>Now Playing</p>
+                    </div>
+                </div>
+                <!-- ------ending of now playing-------->
+
+                <!-- -------starting of popular movies list--->
+                <div class="popular-movies-box">
+                    <div class="section-headings">
+                        <p>Popular Movies</p>
+                    </div>
+                    <div class="popular-movies-container popular-movie-container">
+                        <div class="previous-btn popular-movies-prev-btn popular-movie-prev-btn">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div class="new-div-created">
+                            <div class="popular-movies">
+                                <img src="./Photos/1.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                            <div class="popular-movies">
+                                <img src="./Photos/2.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                            <div class="popular-movies">
+                                <img src="./Photos/3.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                            <div class="popular-movies">
+                                <img src="./Photos/4.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next-btn popular-movies-next-btn popular-movie-next-btn">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- --------ending of popular movies list---->
+
+                <!-- -------starting of top rated movies------>
+                <section class="top-rated-section">
+                    <div class="section-headings">
+                        <p>Top Rated Movies</p>
+                    </div>
+                    <div class="popular-movies-container">
+                        <div class="previous-btn top-rated-movies-prev-btn">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div class="new-div-created new-div-top-rated">
+                            <div class="popular-movies">
+                                <img src="./Photos/1.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                            <div class="popular-movies">
+                                <img src="./Photos/2.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                            <div class="popular-movies">
+                                <img src="./Photos/3.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                            <div class="popular-movies">
+                                <img src="./Photos/4.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next-btn now top-rated-movies-next-btn">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                    </div>
+                </section>
+                <!-- ------ending of top rated movies----->
+                
+                <!------starting of upcoming movies section--->
+                <section class="upcoming-movies-section">
+                    <div class="section-headings">
+                        <p>Upcoming Movies</p>
+                    </div>
+                    <div class="popular-movies-container">
+                        <div class="previous-btn upcoming-movies-prev-btn">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div class="new-div-created new-div-upcoming">
+                            <div class="popular-movies">
+                                <img src="./Photos/1.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                            <div class="popular-movies">
+                                <img src="./Photos/2.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                            <div class="popular-movies">
+                                <img src="./Photos/3.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                            <div class="popular-movies">
+                                <img src="./Photos/4.jpg" alt="">
+                                <div class="favorite-btn hide-element">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="movies-names-info">
+                                    <p class="movies-names">Dream Girl 2</p>
+                                    <p class="movies-year">11 Sep 2023</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next-btn now upcoming-movies-next-btn">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                    </div>
+                </section>
+                <!-- ----ending of upcoming movies section---->
+            </div>
+        <!-- --------------ending of movies list---------->
+            
+            <!------------------starting of TV Shows---------->
+            <section class="tv-shows-container" id="tvshows">
+                <div class="tv-shows-box">
+                    <div class="tv-shows-heading">
+                        <h1>Tv Shows</h1>
+                    </div>
+                    <!-- -----starting Airring-today--- -->
+                    <div class="airring-today-container">
+                        <div class="previous-btn airring-today-prev-btn">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div class="airring-today">
+                            <img src="./Photos/6.jpg" alt="movie-poster">
+                        </div>
+                        <div class="favorite-btn airring-today-fav-btn hide-element">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="next-btn now airring-today-next-btn">
+                            <i class="fa-solid fa-angles-right"></i>
+                        </div>
+                        <div class="airring-today-text">
+                            <p>Airring Today</p>
+                        </div>
+                    </div>
+                    <!-- ----ending Airring-today--- -->
+
+                    <!-------starting of on the air show--- -->
+                    <section class="upcoming-movies-section on-air-show-section">
+                        <div class="section-headings">
+                            <p>Top Rated</p>
+                        </div>
+                        <div class="popular-movies-container on-air-show-container extra-class">
+                            <div class="previous-btn on-air-show-prev-btn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                            <div class="new-div-created on-air-show-newDiv">
+                                <div class="popular-movies on-air-show">
+                                    <img src="./Photos/1.jpg" alt="">
+                                    <div class="favorite-btn hide-element">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="movies-names-info">
+                                        <p class="movies-names">Dream Girl 2</p>
+                                        <p class="movies-year">11 Sep 2023</p>
+                                    </div>
+                                </div>
+                                <div class="popular-movies on-air-show">
+                                    <img src="./Photos/2.jpg" alt="">
+                                    <div class="favorite-btn hide-element">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="movies-names-info">
+                                        <p class="movies-names">Dream Girl 2</p>
+                                        <p class="movies-year">11 Sep 2023</p>
+                                    </div>
+                                </div>
+                                <div class="popular-movies on-air-show">
+                                    <img src="./Photos/3.jpg" alt="">
+                                    <div class="favorite-btn hide-element">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="movies-names-info">
+                                        <p class="movies-names">Dream Girl 2</p>
+                                        <p class="movies-year">11 Sep 2023</p>
+                                    </div>
+                                </div>
+                                <div class="popular-movies on-air-show">
+                                    <img src="./Photos/4.jpg" alt="">
+                                    <div class="favorite-btn hide-element">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="movies-names-info">
+                                        <p class="movies-names">Dream Girl 2</p>
+                                        <p class="movies-year">11 Sep 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="next-btn now on-air-show-next-btn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                        </div>
+                    </section>
+                    <!------ending of on the air show------>
+
+                    <!-------starting of populat-tv-shows---->
+                    <section class="upcoming-movies-section popular-tv-show-section">
+                        <div class="section-headings">
+                            <p>Popular Tv Shows</p>
+                        </div>
+                        <div class="popular-movies-container popular-tv-show-container extra-class">
+                            <div class="previous-btn popular-tv-show-prev-btn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                            <div class="new-div-created popular-tv-show-newDiv">
+                                <div class="popular-movies popular-tv-show">
+                                    <img src="./Photos/1.jpg" alt="">
+                                    <div class="favorite-btn hide-element">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="movies-names-info">
+                                        <p class="movies-names">Dream Girl 2</p>
+                                        <p class="movies-year">11 Sep 2023</p>
+                                    </div>
+                                </div>
+                                <div class="popular-movies popular-tv-show">
+                                    <img src="./Photos/2.jpg" alt="">
+                                    <div class="favorite-btn hide-element">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="movies-names-info">
+                                        <p class="movies-names">Dream Girl 2</p>
+                                        <p class="movies-year">11 Sep 2023</p>
+                                    </div>
+                                </div>
+                                <div class="popular-movies popular-tv-show">
+                                    <img src="./Photos/3.jpg" alt="">
+                                    <div class="favorite-btn hide-element">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="movies-names-info">
+                                        <p class="movies-names">Dream Girl 2</p>
+                                        <p class="movies-year">11 Sep 2023</p>
+                                    </div>
+                                </div>
+                                <div class="popular-movies popular-tv-show">
+                                    <img src="./Photos/4.jpg" alt="">
+                                    <div class="favorite-btn hide-element">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                    <div class="movies-names-info">
+                                        <p class="movies-names">Dream Girl 2</p>
+                                        <p class="movies-year">11 Sep 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="next-btn now popular-tv-show-next-btn">
+                                <i class="fa-solid fa-angles-right"></i>
+                            </div>
+                        </div>
+                    </section>
+                    <!-------ending of popular tv shows--- -->
+                </div>
+            </section>
+            <!-------------------ending of tv shows---------->
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
