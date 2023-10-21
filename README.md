@@ -8,7 +8,7 @@ favorites. Enjoy a seamless movie exploration experience with real-time search, 
 * [Home Page](https://pratapbhawani.github.io/IMDB-Project/index.html)
 * [Movie Page](https://pratapbhawani.github.io/IMDB-Project/moviePage.html)
 * [Favorite Page](https://pratapbhawani.github.io/IMDB-Project/favorite.html)
-* [Explained video]()
+* [Explained video](https://drive.google.com/file/d/1DwUZYQM4Uszhmmew7a30_KdXl_KJt6WN/view?usp=share_link)
 
 ## Table of Contents
  1.<a>Introduction</a><br>
@@ -68,7 +68,7 @@ These pages display movies and shows added to favorites by the user. Movies or s
 * Rendering the fetched data on their respective places on the web app.
 * Fetching the specific searched movie data with the help of The Open Movie Database (OMDb) API.
 * Fetching the all remaining data's with the help of The Movie Database (TMDb) API.
-* Complete code and working of web app are explained in this video [Link]()
+* Complete code and working of web app are explained in this video [Link](https://drive.google.com/file/d/1DwUZYQM4Uszhmmew7a30_KdXl_KJt6WN/view?usp=share_link)
 
 ## What I learnt building this
 I have started this project with pre-planed HTML structere but as I moved further in this project I came across multiple new feature ideas which is one of good challenge to make those idea working 
